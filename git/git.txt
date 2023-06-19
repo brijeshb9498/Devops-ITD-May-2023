@@ -45,6 +45,8 @@ git commit
   # Commit the changes with a message
       git commit -m "Added new feature"
       
+      git commit --amend :- to modify the recent commit
+                            lets us combine staged changes with the previous commit instead of creating entirely a new commit.
 git push 
   - git push is a command used to push your local commited changes (after git add and git commit) to a remote repository.
   - When you make changes to your local repository and want to share them with others or synchronize them with a remote repository 
@@ -111,3 +113,12 @@ git stash
             - This subcommand applies the most recent stash back to your working directory, restoring the changes you stashed.           
   # To remove changes from stash 
         git stash drop 
+        
+        
+Git revert 
+---undotype command.
+* figures out how to invert the changes introduced by the commit 
+* used to undo the changes to a repositorycommit history 
+
+
+
