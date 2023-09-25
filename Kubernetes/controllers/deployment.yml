@@ -12,8 +12,13 @@ spec:
       labels:
         app: ip-app
     spec:
+      tolerations:
+      - key: env
+        effect: NoSchedule
+        operator: "Exists"        
       containers:
       - name: ipapp
-        image: harshajain/ip-app:1
+        image: harshajain/ip_app:2
+        imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 8080

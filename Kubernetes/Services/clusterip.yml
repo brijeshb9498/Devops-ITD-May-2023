@@ -3,12 +3,13 @@ kind: Service
 metadata: 
     name: my-cluster-ip
 spec:
+    type: ClusterIP    
     selector:
-        app: nginx
+        app: ip-app
     ports: 
       - name: http 
-        port: 8090
-        targetPort: 80
+        port: 30002
+        targetPort: 8080
         
         
         
